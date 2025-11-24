@@ -61,7 +61,7 @@
                 <div class="droplist">
                     <a href="#" onclick="document.getElementById('body').style.backgroundColor = 'black'">Black theme</a>
                     <a href="#" onclick="document.getElementById('body').style.backgroundColor = 'white'">Light theme</a>
-                    
+                    <a href="#" onclick="document.getElementById('setwin').style.display = 'flex'">Preferences</a>
                 </div>
             </div>
     </nav>
@@ -177,11 +177,24 @@
          </h2>
 
     </section>
- <div class="setwin" id="setwin">
-    <label for="navbackcolor">Change nav bar color</label>
-    <input type="color" id="navbackcolor" onchange="document.getElementById('nav').style.backgroundColor = this.value">
-    <button type="button" id="closesetwin" onclick="document.getElementById('setwin').style.display = 'none'">X</button>
-</div>
+    <div class="setwin" id="setwin">
+        <div class="set-item">
+            <label for="navbackcolor">Change nav bar color</label>
+            <input type="color" id="navbackcolor" onchange="document.getElementById('nav').style.backgroundColor = this.value"> 
+        </div>
+
+        <div class="set-item">
+            <label for="navcolor">Change nav bar text color</label>
+            <input type="color" id="navcolor" onchange="document.getElementById('nav').style.color = this.value">
+        </div>
+        
+        <div class="set-item">
+            <label for="navcolor">Change nav bar text color</label>
+            <input type="color" id="navcolor" onchange="document.getElementById('nav').style.color = this.value">
+        </div>
+        
+        <button type="button" id="closesetwin" onclick="document.getElementById('setwin').style.display = 'none'">X</button>
+    </div>
 
 
     <footer>
